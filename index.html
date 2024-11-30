@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agentic Alliance - Advancing Agent Frameworks</title>
+    <style>
+      :root {
+        --primary: #00e6ff;
+        --primary-dark: #008b99;
+        --bg-dark: #0a1419;
+        --text-light: #e1e1e1;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Arial', sans-serif;
+        background: var(--bg-dark);
+        color: var(--text-light);
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      header {
+        text-align: center;
+        padding: 40px 0;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 230, 255, 0.1) 0%,
+          rgba(10, 20, 25, 0) 100%
+        );
+      }
+
+      .logo {
+        width: 200px;
+        height: auto;
+        margin-bottom: 20px;
+        animation: glow 3s infinite alternate;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 60px 0;
+        background: radial-gradient(
+          circle at center,
+          rgba(0, 230, 255, 0.1) 0%,
+          rgba(10, 20, 25, 0) 70%
+        );
+      }
+
+      .hero h1 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+        background: linear-gradient(
+          120deg,
+          var(--primary),
+          var(--primary-dark)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        max-width: 800px;
+        margin: 0 auto 30px;
+      }
+
+      .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        padding: 60px 0;
+      }
+
+      .feature-card {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 30px;
+        border-radius: 15px;
+        border: 1px solid rgba(0, 230, 255, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 230, 255, 0.1);
+      }
+
+      .feature-card h3 {
+        color: var(--primary);
+        margin-bottom: 15px;
+      }
+
+      .cta {
+        text-align: center;
+        padding: 80px 0;
+        background: linear-gradient(
+          0deg,
+          rgba(0, 230, 255, 0.1) 0%,
+          rgba(10, 20, 25, 0) 100%
+        );
+      }
+
+      .button {
+        display: inline-block;
+        padding: 15px 40px;
+        background: var(--primary);
+        color: var(--bg-dark);
+        text-decoration: none;
+        border-radius: 30px;
+        font-weight: bold;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 230, 255, 0.3);
+      }
+
+      @keyframes glow {
+        from {
+          filter: drop-shadow(0 0 10px rgba(0, 230, 255, 0.3));
+        }
+        to {
+          filter: drop-shadow(0 0 20px rgba(0, 230, 255, 0.6));
+        }
+      }
+
+      footer {
+        text-align: center;
+        padding: 40px 0;
+        background: rgba(255, 255, 255, 0.02);
+      }
+
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2.5rem;
+        }
+        .features {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.png" alt="Agentic AI Logo" class="logo" />
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>Exploring the Future of Agentic AI</h1>
+          <p>
+            Join us in researching and documenting the bleeding edge of agentic
+            frameworks. Connect with innovators, researchers, and developers
+            pushing the boundaries of artificial intelligence.
+          </p>
+        </div>
+      </section>
+
+      <section class="features container">
+        <div class="feature-card">
+          <h3>Research Hub</h3>
+          <p>
+            Access cutting-edge research on agentic frameworks, autonomous
+            systems, and emerging AI technologies. Stay informed about the
+            latest developments and breakthroughs.
+          </p>
+        </div>
+        <div class="feature-card">
+          <h3>Community</h3>
+          <p>
+            Connect with like-minded individuals, share insights, and
+            collaborate on projects. Our community brings together researchers,
+            developers, and enthusiasts.
+          </p>
+        </div>
+        <div class="feature-card">
+          <h3>Documentation</h3>
+          <p>
+            Comprehensive documentation of agentic frameworks, implementation
+            guides, and best practices. Learn from real-world applications and
+            use cases.
+          </p>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="container">
+          <h2>Join the Discussion</h2>
+          <p>Be part of the community shaping the future of agentic AI</p>
+          <br />
+          <a
+            href="https://github.com/agenticalliance/agenticalliance.com"
+            class="button"
+            >Get Started</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2024 Agentic Alliance. Advancing the future of autonomous
+          systems.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
