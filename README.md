@@ -1,6 +1,6 @@
-# Agentic AI - Advancing Agent Frameworks
+# Agentic Alliance - Advancing Agent Frameworks
 
-Welcome to **Agentic AI**, a collaborative initiative focused on exploring and advancing agentic frameworks. This repository serves as a hub for cutting-edge research, community collaboration, and comprehensive documentation for innovators, researchers, and developers working on the future of artificial intelligence.
+Welcome to **Agentic Alliance**, a collaborative initiative focused on exploring and advancing agentic frameworks. This repository serves as a hub for cutting-edge research, community collaboration, and comprehensive documentation for innovators, researchers, and developers working on the future of artificial intelligence.
 
 ![Agentic AI Logo](images/logo.png)
 
@@ -49,4 +49,4 @@ Connect with our partner initiatives advancing the future of AI and robotics:
 
 ---
 
-**© 2024 Agentic AI** - Advancing the future of autonomous systems.
+**© 2024 Agentic Alliance** - Advancing the future of autonomous systems.
