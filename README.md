@@ -33,7 +33,7 @@ Our goal is to shape the next generation of agentic AI by fostering innovation, 
 
 ## 🌍 Join the Mission
 
-Be part of the community shaping the future of autonomous systems and AI. Connect, contribute, and innovate together.
+Be part of the community shaping the future of autonomous systems and AI. Join our growing community on [Reddit](https://www.reddit.com/r/agenticalliance/) to connect, contribute, and innovate together.
 
 Visit our [GitHub Wiki](https://github.com/agenticalliance/agenticalliance.com/wiki) for detailed documentation and project information.
 
