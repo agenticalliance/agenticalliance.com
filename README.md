@@ -8,7 +8,7 @@ Welcome to **Agentic AI**, a collaborative initiative focused on exploring and a
 
 ## 🌟 Vision
 
-Our goal is to push the boundaries of agentic AI by fostering innovation, research, and implementation. Agentic AI aims to bridge the gap between autonomous systems and real-world applications, creating a vibrant community that shapes the future of artificial intelligence.
+Our goal is to shape the next generation of agentic AI by fostering innovation, research, and implementation. We're building a global community of researchers and developers pioneering the future of autonomous systems and AI frameworks.
 
 ---
 
@@ -16,24 +16,36 @@ Our goal is to push the boundaries of agentic AI by fostering innovation, resear
 
 ### 1. **Research Hub**
 
-- Access the latest developments in agentic frameworks and AI technologies.
-- Explore breakthroughs in autonomous systems and emerging innovations.
+- Dive into groundbreaking research on agentic systems and AI frameworks
+- Get early access to emerging technologies and help define industry standards
 
 ### 2. **Community**
 
-- Collaborate with like-minded individuals in a vibrant ecosystem of researchers, developers, and AI enthusiasts.
-- Share insights, projects, and ideas to drive collective growth.
+- Join a thriving ecosystem of AI innovators and researchers
+- Collaborate on cutting-edge projects and accelerate collective growth
 
 ### 3. **Documentation**
 
-- Comprehensive guides on agentic frameworks and real-world use cases.
-- Implementation best practices and practical insights for developers.
+- Access battle-tested implementation guides and reference architectures
+- Learn from real-world case studies and industry best practices
 
 ---
 
 ## 🌍 Join the Mission
 
 Be part of the community shaping the future of autonomous systems and AI. Connect, contribute, and innovate together.
+
+Visit our [GitHub Wiki](https://github.com/agenticalliance/agenticalliance.com/wiki) for detailed documentation and project information.
+
+---
+
+## 🤝 Current Alliance Projects
+
+Connect with our partner initiatives advancing the future of AI and robotics:
+
+- [Sandy Mount](https://sandy-mount.com/) - Pioneering autonomous systems research
+- [AI & Robotic Labs](https://ai-robotic-labs.github.io/ai-robotic-labs/) - Cutting-edge robotics and AI integration
+- [Narrative Goldmine](https://narrativegoldmine.com/#/page/agentic%20alliance) - AI-driven narrative intelligence
 
 ---
 
