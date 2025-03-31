@@ -1,0 +1,39 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # <-- Important: allows pushing to the repo
+
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false  # sometimes helpful for clarity
+
+      - name: Use Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages   # Explicitly set the target branch
+          force_orphan: true         # Creates or overwrites branch if needed
+          commit_message: "Deploy from GitHub Actions"
