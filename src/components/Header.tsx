@@ -26,14 +26,19 @@ export const Header = () => {
       }`}
     >
       <div className="container flex items-center justify-between">
-        <div className="flex items-center gap-2">
+        <a href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
           <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-purple-600"></div>
           <span className="font-bold text-xl tracking-tight">Agentic Alliance</span>
-        </div>
-        
-        <Button variant="ghost" asChild>
-          <a href="mailto:info@agenticalliance.com">Contact</a>
-        </Button>
+        </a>
+
+        <nav className="flex items-center gap-6">
+          <a href="/news.html" className="text-sm font-medium text-muted-foreground hover:text-cyan-400 transition-colors">
+            News
+          </a>
+          <Button variant="ghost" asChild>
+            <a href="mailto:info@agenticalliance.com">Contact</a>
+          </Button>
+        </nav>
       </div>
     </header>
   );
