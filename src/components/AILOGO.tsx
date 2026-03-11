@@ -445,29 +445,61 @@ const AILOGOScene = ({ skills = [] }: AILOGOProps) => {
 };
 
 /**
+ * Check if WebGL is available in the current browser.
+ */
+const isWebGLAvailable = (): boolean => {
+  try {
+    const canvas = document.createElement('canvas');
+    return !!(
+      window.WebGLRenderingContext &&
+      (canvas.getContext('webgl') || canvas.getContext('experimental-webgl'))
+    );
+  } catch {
+    return false;
+  }
+};
+
+/**
+ * CSS-only fallback when WebGL is not available.
+ */
+const AILOGOFallback = ({ skills }: AILOGOProps) => (
+  <div className="w-full h-full flex items-center justify-center relative overflow-hidden">
+    <div className="absolute inset-0 bg-gradient-to-br from-[#0a1419] via-[#0d1f2d] to-[#0a1419]" />
+    <div className="relative grid grid-cols-3 md:grid-cols-4 gap-3 p-8 max-w-2xl opacity-40">
+      {skills.slice(0, 16).map((skill, i) => (
+        <span
+          key={i}
+          className="text-xs md:text-sm text-cyan-400/70 text-center animate-pulse"
+          style={{ animationDelay: `${i * 0.2}s` }}
+        >
+          {skill}
+        </span>
+      ))}
+    </div>
+  </div>
+);
+
+/**
  * The main export component that sets up the R3F Canvas and scene environment.
  */
 export const AILOGO = ({ skills }: AILOGOProps) => {
+  const [webgl] = useState(isWebGLAvailable);
+
+  if (!webgl) {
+    return <AILOGOFallback skills={skills} />;
+  }
+
   return (
-    // Container div for the canvas
     <div className="w-full h-full">
       <Canvas
-        // Camera setup: position and field of view
         camera={{ position: [0, 0, 25], fov: 55 }}
-        // WebGL renderer settings
         gl={{ antialias: true }}
-        // Device pixel ratio for sharper rendering on high-res screens
         dpr={[1, 2]}
       >
-        {/* Scene fog effect - brought closer */}
         <fog attach="fog" args={['#0a1419', 15, 30]} />
-        {/* Basic ambient lighting */}
         <ambientLight intensity={0.6} />
-        {/* A point light for highlights */}
         <pointLight position={[15, 15, 15]} intensity={1.2} />
-        {/* Render the AILOGO scene content */}
         <AILOGOScene skills={skills} />
-        {/* OrbitControls removed as camera is fixed */}
       </Canvas>
     </div>
   );
